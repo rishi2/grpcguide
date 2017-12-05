@@ -12,5 +12,5 @@ After successful server up following message should come :
 
 `INFO: Server started, listening on 50051`
 
-3. Now execute, Client class for calculateArea from grpcguideclient repo
+3. Now execute, AreaClient class for calculateArea from grpcguideclient repo ( check Readme of https://github.com/rishi2/grpcguideclient)
 
