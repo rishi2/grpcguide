@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package com.example.server.area;
+
+
+enum AreaFor {
+	CIRCLE = 0;
+	RECTANGLE = 1;
+	SQUARE = 2;
+}
+message AreaRequest {
+	double length = 1;
+	double width = 2;
+	double radius = 3;
+	AreaFor areafor = 4;
+	
+}
+
+message AreaResponse {
+	double area = 1;
+}
+
+service AreaService {
+	rpc GetArea(AreaRequest) returns ( AreaResponse );
+}
